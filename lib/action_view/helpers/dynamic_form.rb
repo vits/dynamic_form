@@ -191,7 +191,7 @@ module ActionView
           object = convert_to_model(object)
 
           if object.class.respond_to?(:model_name)
-            options[:object_name] ||= object.class.model_name.human.downcase
+            options[:object_name] ||= object.class.model_name.human
           end
 
           object
